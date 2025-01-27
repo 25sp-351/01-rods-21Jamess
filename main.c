@@ -38,6 +38,7 @@ void read_input(RodData *rod_data, int *count) {
 // Parameters: count - number of avaliable rod lengths
 // Parameters: remaining_length - remaining length of the rod
 // Parameters: cuts - array to store the count of cuts for each length
+
 int maximize_value(const RodData *rod_data, int count, int remaining_length,
                    int cuts[]) {
     if (remaining_length == 0)
@@ -73,7 +74,7 @@ int maximize_value(const RodData *rod_data, int count, int remaining_length,
 int main(int argc, char *argv[]) {
     // Check if the correct number of arguments is provided
     if (argc != 2) {
-        fprintf(stderr, "Usage: %s <rod_length>\n", argv[0]);
+        fprintf(stderr, "Please provide a rod length.\n", argv[0]);
         return 1;
     }
 
