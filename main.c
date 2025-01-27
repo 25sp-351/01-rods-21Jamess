@@ -73,7 +73,7 @@ int maximize_value(const RodData *rod_data, int count, int remaining_length,
 int main(int argc, char *argv[]) {
     // Check if the correct number of arguments is provided
     if (argc != 2) {
-        fprintf(stderr, "Usage: %s <rod_length>\n", argv[0]);
+        fprintf(stderr, "Please provide a rod length\n", argv[0]);
         return 1;
     }
 
